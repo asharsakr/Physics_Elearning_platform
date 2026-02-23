@@ -1,0 +1,47 @@
+﻿@page
+@model DBproject.Pages.progressModel
+@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "_DashboardLayout";
+}
+
+@using System.Data
+@using DBproject.Pages 
+
+
+<h2 class="header">Progress Report</h2>
+<div class="student-info">
+    <div class="info-item">
+        <label>Name:</label> <span>@Model.CurrentUser.FirstName @Model.CurrentUser.LastName</span>
+    </div>
+    <div class="info-item">
+        <label>Student ID:</label> <span>@Model.CurrentUser.ID</span>
+    </div>
+    <div class="info-item">
+        <label>Academic Year:</label> <span>@Model.CurrentUser.AcademicYear</span>
+    </div>
+</div>
+
+<canvas id="quizChart"></canvas>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Topic</th>
+            <th>Grade</th>
+            <th>Total Grade</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (DataRow row in Model.grades.Rows)
+        {
+            <tr>
+                <td>@row["RowNumber"]</td>
+                <td>@row["Topic"]</td>
+                <td>@row["Grade"]</td>
+                <td>@row["TotalGrade"]</td>
+            </tr>
+        }
+    </tbody>
+</table>
