@@ -6,7 +6,7 @@ Developed in response to the shift toward digital education post-COVID-19, this 
 
 The system's core logic ensures academic integrity by gatekeeping advanced lessons until students pass assessment milestones with a required percentage.
 
-# Tech Stack
+## Tech Stack
 Framework: ASP.NET Razor Pages
 
 Database: SQL Server (Relational Schema)
