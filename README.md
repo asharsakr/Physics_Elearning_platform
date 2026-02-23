@@ -6,6 +6,14 @@ Developed in response to the shift toward digital education post-COVID-19, this 
 
 The system's core logic ensures academic integrity by gatekeeping advanced lessons until students pass assessment milestones with a required percentage.
 
+#Tech Stack
+Framework: ASP.NET Razor Pages
+
+Database: SQL Server (Relational Schema)
+
+Logic: C# (Session management, Validation, and Authentication)
+
+Frontend: HTML5, CSS3, JavaScript (integrated with Razor syntax)
 ## Key Features
 
 ### For Students
